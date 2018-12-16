@@ -1,0 +1,117 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F8DBB227-BBA9-4A4B-9DE8-72449371A940}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <RootNamespace>AdventOfCode2018</RootNamespace>
+    <AssemblyName>AdventOfCode2018</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Challenge.cs" />
+    <Compile Include="Day17\Day17.cs" />
+    <Compile Include="Day18\Day18.cs" />
+    <Compile Include="Day19\Day19.cs" />
+    <Compile Include="Day20\Day20.cs" />
+    <Compile Include="Day21\Day21.cs" />
+    <Compile Include="Day22\Day22.cs" />
+    <Compile Include="Day23\Day23.cs" />
+    <Compile Include="Day24\Day24.cs" />
+    <Compile Include="Day25\Day25.cs" />
+    <Compile Include="Day16\Day16.cs" />
+    <Compile Include="Day15\Day15.cs" />
+    <Compile Include="Day14\Day14.cs" />
+    <Compile Include="Day4\Day4.cs" />
+    <Compile Include="Day5\Day5.cs" />
+    <Compile Include="Day6\Day6.cs" />
+    <Compile Include="Day7\Day7.cs" />
+    <Compile Include="Day8\Day8.cs" />
+    <Compile Include="Day9\Day9.cs" />
+    <Compile Include="Day10\Day10.cs" />
+    <Compile Include="Day11\Day11.cs" />
+    <Compile Include="Day12\Day12.cs" />
+    <Compile Include="Day13\Day13.cs" />
+    <Compile Include="Day3\Day3.cs" />
+    <Compile Include="Day2\Day2.cs" />
+    <Compile Include="Day1\Day1.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day1\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day2\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day3\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day4\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day5\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day6\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day7\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day8\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day15\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day12\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day16\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day10\input.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Day13\input.txt" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
